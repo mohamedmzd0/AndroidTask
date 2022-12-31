@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MazaadyTask</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="main_category">Main Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="process_type">Process Type</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="by_date">بتاريخ</string>
+    <string name="start_date">المزاد يبدأ بعد</string>
+    <string name="mazad_name">اسم المزاد</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="rate_mazad">تقييم المزاد</string>
+    <string name="seller">البائع</string>
+    <string name="similler_products">منتجات متشابهه</string>
+</resources>

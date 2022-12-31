@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mazaadytask.ui.categories_selection.CategoriesSelectionFragment"
+        tools:layout="@layout/fragment_category_selection" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.mazaadytask.ui.auction.AuctionFragment"
+        tools:layout="@layout/fragment_auction" />
+    <dialog
+        android:id="@+id/selectionBottomSheet"
+        android:name="com.example.mazaadytask.ui.selection_bottom_sheet.SelectionBottomSheet"
+        android:label="fragment_selection_bottom_sheet"
+        tools:layout="@layout/fragment_selection_bottom_sheet" />
+
+
+</navigation>
