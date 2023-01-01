@@ -11,12 +11,14 @@ data class AllCategoriesResponse(
 
 @Parcelize
 data class Category(
+    var selected:Boolean=false,
+     var otherValue: String="",
 
     @SerializedName("parent") var parent: Int? = null,
     @SerializedName("child") var child: Boolean? = null,
 
     val id: Int? = null,
-    val name: String? = null,
+    var name: String? = null,
     val description: String? = null,
     val image: String? = null,
     val slug: String? = null,
@@ -26,4 +28,5 @@ data class Category(
     @SerializedName("disable_shipping")
     val disableShipping: Long? = null,
 
-) : Parcelable
+    ) : Parcelable {
+}

@@ -47,6 +47,7 @@ object Constants {
         const val MAIN_CATEGORY = "main-category"
         const val SUB_CATEGORY = "sub-category"
         const val PROPERTY_OPTION = "options"
+        const val SELECTED_PROPERTY_OPTION = "selected-options"
 
     }
 

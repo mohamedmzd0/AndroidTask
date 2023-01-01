@@ -11,8 +11,8 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 class ProvideCategoriesUseCase {
-    @Provides
-    fun provideCategoriesUseCase(categoriesRepository: CategoriesRepositoryImpl): CategoriesUseCase {
-        return CategoriesUseCase(categoriesRepository)
-    }
+//    @Provides
+//    fun provideCategoriesUseCase(categoriesRepository: CategoriesRepositoryImpl): CategoriesUseCase {
+//        return CategoriesUseCase(categoriesRepository,)
+//    }
 }

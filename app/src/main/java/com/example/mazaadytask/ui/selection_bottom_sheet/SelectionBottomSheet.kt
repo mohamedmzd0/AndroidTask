@@ -16,13 +16,14 @@ import com.example.data.utils.Constants
 import com.example.mazaadytask.R
 import com.example.mazaadytask.databinding.FragmentSelectionBottomSheetBinding
 import com.example.utils.fromJson
+import com.example.utils.toJson
 
 private const val TAG = "SelectionBottomSheet"
 
 class SelectionBottomSheet : BaseBottomSheet() {
 
     companion object {
-        val CATEGORY_RESULT = "category-selection"
+        const val CATEGORY_RESULT = "category-selection"
     }
 
     private var propertiesModel: PropertiesModel? = null
@@ -66,7 +67,10 @@ class SelectionBottomSheet : BaseBottomSheet() {
         else if (arguments?.containsKey(Constants.INTENT.PROPERTY_OPTION) == true) {
             setFragmentResult(
                 CATEGORY_RESULT,
-                bundleOf(Constants.INTENT.PROPERTY_OPTION to category)
+                bundleOf(
+                    Constants.INTENT.SELECTED_PROPERTY_OPTION to category,
+                    Constants.INTENT.PROPERTY_OPTION to propertiesModel.toJson()
+                )
             )
         }
         findNavController().navigateUp()

@@ -45,6 +45,13 @@
             tools:itemCount="2"
             tools:listitem="@layout/item_input_edttext" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:backgroundTint="@color/yellow"
+            app:cornerRadius="10dp"/>
 
     </LinearLayout>
 

@@ -5,6 +5,7 @@
         <item name="android:layout_margin">6dp</item>
         <item name="boxCornerRadiusTopEnd">8dp</item>
         <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="hintAnimationEnabled">false</item>
         <item name="boxCornerRadiusBottomStart">8dp</item>
         <item name="boxCornerRadiusBottomEnd">8dp</item>
         <item name="boxBackgroundMode">outline</item>

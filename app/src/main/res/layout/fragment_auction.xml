@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layoutDirection="rtl"
     android:layout_height="match_parent"
     tools:context=".ui.auction.AuctionFragment">
 
@@ -246,7 +247,7 @@
                 android:gravity="center"
                 android:text="@string/rate_mazad"
                 android:textColor="@color/dark_red"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintBottom_toBottomOf="@id/ratingBar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -300,8 +301,10 @@
 
 
             <View
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_width="0dp"
-                android:layout_height="2dp"
+                android:layout_height="5dp"
                 android:background="@drawable/horizontal_dash"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toStartOf="@+id/textView2"
@@ -309,8 +312,10 @@
                 app:layout_constraintTop_toTopOf="@+id/textView2" />
 
             <View
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_width="0dp"
-                android:layout_height="2dp"
+                android:layout_height="5dp"
                 android:background="@drawable/horizontal_dash"
                 app:layout_constraintBottom_toBottomOf="@+id/textView3"
                 app:layout_constraintEnd_toStartOf="@+id/textView3"
@@ -373,11 +378,12 @@
                 android:id="@+id/tvAuctioners"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/normal_padding"
                 android:layout_margin="@dimen/large_padding"
-                android:drawableStart="@drawable/auctioner"
                 android:text="المزايدون"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/relativeCurrentSellingValue" />
+                app:layout_constraintTop_toBottomOf="@id/relativeCurrentSellingValue"
+                app:drawableStartCompat="@drawable/auctioner" />
 
 
             <TextView
@@ -387,7 +393,7 @@
                 android:gravity="center"
                 android:text="@string/view_all"
                 android:textColor="@color/dark_red"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintBottom_toBottomOf="@id/tvAuctioners"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -397,6 +403,7 @@
                 android:id="@+id/recylcerViewAuctioners"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
                 android:nestedScrollingEnabled="false"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintTop_toBottomOf="@id/tvAuctioners"
@@ -501,7 +508,7 @@
                 android:layout_margin="@dimen/default_margin"
                 android:text="@string/view_all"
                 android:textColor="@color/dark_red"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintBottom_toBottomOf="@id/tvSimillerProducts"
                 app:layout_constraintEnd_toEndOf="parent"

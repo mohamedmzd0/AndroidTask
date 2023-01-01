@@ -11,7 +11,7 @@
         tools:layout="@layout/fragment_category_selection" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_auctionsFragment"
         android:name="com.example.mazaadytask.ui.auction.AuctionFragment"
         tools:layout="@layout/fragment_auction" />
     <dialog
